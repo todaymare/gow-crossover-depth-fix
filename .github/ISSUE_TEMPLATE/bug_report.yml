@@ -1,0 +1,31 @@
+name: Rendering or installation problem
+description: Report a reproducible problem with the depth fix.
+body:
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      description: Include macOS, CrossOver, God of War, and depth-fix release versions.
+    validations:
+      required: true
+  - type: dropdown
+    id: backend
+    attributes:
+      label: CrossOver graphics backend
+      options:
+        - D3DMetal
+        - DXMT
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happens and how to reproduce it
+      description: Describe the scene or installer step, expected result, and actual result. Remove private paths and account information from logs/screenshots before posting.
+    validations:
+      required: true
+  - type: textarea
+    id: toggle
+    attributes:
+      label: On/off comparison
+      description: For rendering issues, does changing gow_proxy_depth.txt between 0 and 2 change the problem? Include screenshots if useful.

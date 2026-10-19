@@ -1,0 +1,5 @@
+/build/
+/dist/
+/*.dll
+/*.exe
+.DS_Store
